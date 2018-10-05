@@ -1,0 +1,30 @@
+{
+    "$schema": "../../../extension.schema.json",
+    "$version": "1.0.0",
+    "$name": "aos.plugin",
+    "$description": "AOS Plugin",
+
+    "actions": [
+        {
+            "id": "aos.plugin.actions.info",
+            "type": "AOS_ACTION",
+            "payload": "$(context.selection.first.entry)"
+        }
+    ],
+
+    "features": {
+        "viewer": {
+            "openWith": [
+                {
+                    "id": "aos.plugin.viewer.openWith.action1",
+                    "type": "button",
+                    "icon": "build",
+                    "title": "Office",
+                    "actions": {
+                        "click": "aos.plugin.actions.info"
+                    }
+                }
+            ]
+        }
+    }
+}
