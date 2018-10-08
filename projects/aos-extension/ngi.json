@@ -1,0 +1,14 @@
+{
+  "assets": [
+    {
+      "from": "assets/aos.plugin.json",
+      "to": "plugins"
+    }
+  ],
+  "modules": [
+    {
+      "name": "AosExtensionModule",
+      "namespace": "aos-extension"
+    }
+  ]
+}
