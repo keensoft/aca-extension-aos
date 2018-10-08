@@ -8,7 +8,7 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "build:aos-extension": "rm -rf dist && ng build aos-extension && cpr projects/aos-extension/assets dist/aos-extension/assets",
+    "build:aos-extension": "rm -rf dist && ng build aos-extension && cp projects/aos-extension/ngi.json dist/aos-extension && cpr projects/aos-extension/assets dist/aos-extension/assets",
     "pack:aos-extension": "cd dist/aos-extension && npm pack",
     "package:aos-extension": "npm run build:aos-extension && npm run pack:aos-extension"
   },
