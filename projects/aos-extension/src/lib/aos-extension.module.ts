@@ -8,7 +8,7 @@ import { AosEffects } from './effects/aos.effects';
 
 @NgModule({
   imports: [
-    EffectsModule.forRoot([AosEffects])
+    EffectsModule.forFeature([AosEffects])
   ],
   declarations: [AosExtensionComponent],
   exports: [AosExtensionComponent],
