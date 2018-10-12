@@ -1,8 +1,9 @@
 {
   "assets": [
     {
-      "from": "assets/aos.plugin.json",
-      "to": "plugins"
+      "glob": "**/*.json",
+      "input": "./assets",
+      "output": "./assets/plugins"
     }
   ],
   "modules": [
